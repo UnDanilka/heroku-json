@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const getTodo = () => {
-    fetch("http://localhost:3001/todos")
+    fetch("https://heroku-json-test.herokuapp.com/api/todos")
       .then((res) => res.json())
       .then((res) => setData(res));
   };
